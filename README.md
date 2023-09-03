@@ -53,6 +53,15 @@ When compared to the values of the variables declared in terraform.tfvars, comma
     -var / -var-file   >  terraform.auto.tfvars  > terraformtfvars > shell variables
 ```
 
+### Shell Based Variables :
+
+```
+    These are the variables with least priority and this can be supplied by shell using export.
+
+        $ export TF_VAR_varName=value 
+    
+    This is how we can supply the shell based variables
+```
 
 In this training, we would be using the latest version of terraform v1.5.2 ( 10/July/2023 )
 
