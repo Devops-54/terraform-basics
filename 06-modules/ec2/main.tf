@@ -1,7 +1,7 @@
 # Creates EC2
 resource "aws_instance" "sample" {
   ami                     = "ami-01717a867ca32066a"
-  instance_type           = "t3.micro"
+  instance_type           = "t3.nano"
   
 }
 
