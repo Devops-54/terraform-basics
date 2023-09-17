@@ -17,7 +17,7 @@ resource "aws_instance" "sample" {
     }
 
     inline = [
-      "ansible-pull -U https://github.com/Devops-54/ansible.git -e ENV=dev -e COMPONENT=mongodb"
+      "ansible-pull -U https://github.com/Devops-54/ansible.git -e ENV=dev -e COMPONENT=mongodb roboshop-pull.yml"
     ]
   }
 }
