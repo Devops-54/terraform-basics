@@ -1,9 +1,7 @@
-module "frontend" {
-    for_each    = var.COMPONENTS
-
+module "frontend" {    
     source      = "./ec2"
-    COMPONENT   = each.key
-    APP_VERSION = each.value.APP_VERSION
+    COMPONENT   = "frontend"
+    APP_VERSION = "0.0.1"
 }
 
 # module "mongodb" {
